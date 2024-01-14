@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.all{
+    background-color: rgb(7, 10, 42);
+    color: white;
+}
+nav{
+    padding-top: 3rem;
+    margin-left: 50%;
+}
+nav ul{
+    gap: 2rem;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.cont{
+    margin-top: 10rem;
+    transition: .5s ease;
+    margin-left: 10px;
+}
+
+.one h1{
+    margin-top: -15px;
+    margin-left: 10px;
+    display: flex;
+    transition: 1.5s ease;
+    
+}
+.one p{
+    margin-left: 30px;
+}
+.one button{
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: -25rem;
+    margin-left: 10%;
+}
+.imag {
+    background-color: black;
+    color: white;
+    float: right;
+    margin-top: -18rem;
+    margin-right: 2rem;
+    clip-path: circle(45%);
+    cursor: pointer;
+    height: 30rem;
+    transition: 1.5s ease;
+}
+.imag img{
+    height: 29rem;
+}
+.social-media{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: -0.5rem 1.5rem 2rem 10rem;
+    transition: .5s ease;
+}
+.social-media a {
+    margin: 2.5rem .75rem 3rem;
+}
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+.about{
+    display: flex;
+    transition: s ease;
+    gap: 5rem;
+    margin-left: 5rem;
+    margin-top: 14rem;
+}
+.personal img{
+    height: 30rem;
+    border-radius: 15px;
+}
+.matter{
+    margin-top: 2rem;
+}
+
+
+.portfolio {
+    min-height: auto;
+    padding-bottom: 10rem;
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+    margin-bottom: 20px;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+    background: linear-gradient(to bottom, #ffffff 0%, #7878ec 100%);
+}
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+    color: black;
+}
+
+.portfolio-layer p {
+    font-size: .6rem;
+    color: black;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-blue);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: #333;
+}
+form{
+    margin-left: 30%;
+    margin-top: 3rem;
+}
+.form-container{
+	width: 70%;
+	margin-left:15%;
+    display: flex;
+    background: #0d224a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+.input-row{
+    margin-bottom: 10px;
+}
+.input-row label{
+	display: block;
+	margin-bottom: 3px;
+    margin-left: -2rem;
+}
+
+.input-row input{
+	width: 20rem;
+	padding: 10px;
+	border:0;
+	border-radius: 3px;
+	outline: 0;
+	margin-bottom: 3px;
+	font-size: 18px;
+    margin-left: -2rem;
+	font-family: arial;
+}
+.input-row button {
+    width: 100px;
+    border: none;
+    height: 40px;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    background: #0688a5;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width: 879px) {
+    .portfolio .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
